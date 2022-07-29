@@ -1,19 +1,20 @@
-package _01.service;
+package service;
 
-import _01.repo.TestRepo;
 import org.springframework.stereotype.Service;
+import repo.TestRepo;
 
 /**
- * todo daleksandrova
+ * Реализация сервиса, используя аннотации и конфигурацию
  *
  * @author Darya Alexandrova
  * @since 2022.07.28
  */
 @Service
 public class TestServiceWithBeanImpl implements TestService {
+
     private TestRepo testRepo;
 
-    public TestServiceWithBeanImpl(TestRepo testRepo){
+    public TestServiceWithBeanImpl(TestRepo testRepo) {
         this.testRepo = testRepo;
     }
 

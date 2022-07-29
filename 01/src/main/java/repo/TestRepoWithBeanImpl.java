@@ -1,9 +1,9 @@
-package _01.repo;
+package repo;
 
 import org.springframework.stereotype.Repository;
 
 /**
- * todo daleksandrova
+ * Реализация репозитория через аннотации. Современно.
  *
  * @author Darya Alexandrova
  * @since 2022.07.28
