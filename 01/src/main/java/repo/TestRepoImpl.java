@@ -1,7 +1,7 @@
-package _01.repo;
+package repo;
 
 /**
- * todo daleksandrova
+ * Реализация репозитория через XML. Старый подход.
  *
  * @author Darya Alexandrova
  * @since 2022.07.28

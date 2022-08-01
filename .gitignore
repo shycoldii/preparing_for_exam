@@ -6,6 +6,10 @@
 /target/
 */target/**
 **/META-INF/
+*.iml
+
+.DS_Store
+.DS_Store?
 
 # Log file
 *.log

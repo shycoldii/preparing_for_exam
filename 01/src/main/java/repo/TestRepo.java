@@ -1,7 +1,7 @@
-package _01.repo;
+package repo;
 
 /**
- * todo daleksandrova
+ * Базовый репозиторий.
  *
  * @author Darya Alexandrova
  * @since 2022.07.28
