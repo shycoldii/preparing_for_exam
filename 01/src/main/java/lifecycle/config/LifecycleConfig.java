@@ -1,5 +1,7 @@
 package lifecycle.config;
 
+import lifecycle.MyBeanFactoryPostProcessor;
+import lifecycle.MyBeanPostProcessor;
 import lifecycle.repo.MyLifecycleRepo;
 import lifecycle.repo.TheirLifecycleRepo;
 import lifecycle.service.MyLifecycleService;
@@ -28,6 +30,16 @@ public class LifecycleConfig {
     @Bean(initMethod = "initMethod", destroyMethod = "destroyMethod")
     public MyLifecycleService lifecycleService() {
         return new MyLifecycleService(lifecycleRepo());
+    }
+
+    @Bean
+    public static MyBeanFactoryPostProcessor myBeanFactoryPostProcessor(){
+        return new MyBeanFactoryPostProcessor();
+    }
+
+    @Bean
+    public MyBeanPostProcessor myBeanPostProcessor(){
+        return new MyBeanPostProcessor();
     }
 
 }

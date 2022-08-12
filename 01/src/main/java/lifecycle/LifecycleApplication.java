@@ -9,6 +9,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * Еще есть возможность третьего конструктора - через eventListener на refresh приложения, например.
  * В тот момент уже все бины инициализированы и настроены BPP (после BPP2)
  *
+ * Свои BPP запускаются до обработки postContruct
+ *
  * @author Darya Alexandrova
  * @since 2022.08.06
  */

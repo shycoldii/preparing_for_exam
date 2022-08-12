@@ -26,7 +26,7 @@ public class SingletonLookUpBean {
         this.prototypeProxyBean = prototypeProxyBean;
     }
 
-    @Lookup
+    //@Lookup
     public PrototypeBean getPrototypeBean() {
         return prototypeBean;
     }
