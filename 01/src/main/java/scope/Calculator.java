@@ -18,6 +18,7 @@ public class Calculator {
         return a + b;
     }
 
+    //плохая идея. Такое только в конфиге лучще делать (лайт мод)
     @Bean
     public MyBean myBean() {
         this.myBean = new MyBean();
