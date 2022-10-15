@@ -1,6 +1,7 @@
 package repo;
 
 import org.springframework.stereotype.Repository;
+import repo.TestRepo;
 
 /**
  * Реализация репозитория через аннотации. Современно.

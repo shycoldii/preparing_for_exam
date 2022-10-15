@@ -1,5 +1,7 @@
 package service;
 
+import javax.annotation.PreDestroy;
+
 import org.springframework.stereotype.Service;
 import repo.TestRepo;
 
@@ -9,7 +11,7 @@ import repo.TestRepo;
  * @author Darya Alexandrova
  * @since 2022.07.28
  */
-@Service
+//@Service //todo поставила комментарий, чтобы не мешало (в дальнейшем нужно будет отдельные кейсы в разные пакеты разносить)
 public class TestServiceWithBeanImpl implements TestService {
 
     private TestRepo testRepo;
@@ -21,5 +23,10 @@ public class TestServiceWithBeanImpl implements TestService {
     @Override
     public TestRepo getRepo() {
         return testRepo;
+    }
+
+    @PreDestroy
+    public void preDestroy(){
+        System.out.println("Destroying");
     }
 }
