@@ -44,8 +44,6 @@ public class MyLifecycleService implements LifecycleService, InitializingBean, D
     }
 
 
-
-
     public void initMethod(){
         System.out.println("initMethod");
         System.out.println(theirLifecycleRepo);
